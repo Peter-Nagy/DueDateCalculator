@@ -1,3 +1,4 @@
+![build status](https://circleci.com/gh/Peter-Nagy/DueDateCalculator.png?style=shield&circle-token=2280c1f8b48409a4827c2d587b9b5d3992b675c1)
 # DueDateCalculator
 This module exports a function named calculateDueDate, which calculates due dates for bug reports.
 ## Usage
