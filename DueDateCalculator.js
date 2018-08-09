@@ -13,7 +13,7 @@ const MS_IN_AN_HOUR = 60 * 60 * 1000;
 const MS_IN_A_DAY = MS_IN_AN_HOUR * 24;
 const WORKDAY_LENGTH = 8;
 
-function CalculateDueDate(submitDate, turnaround) {
+function calculateDueDate(submitDate, turnaround) {
   if (!isDate(submitDate)) {
     throw new Error('Invalid input: submitTime is not a date!');
   }
@@ -45,5 +45,5 @@ function CalculateDueDate(submitDate, turnaround) {
 }
 
 module.exports = {
-  CalculateDueDate,
+  calculateDueDate,
 };
