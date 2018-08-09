@@ -101,4 +101,4 @@ describe('DueDateCalculator due date calculating tests', () => {
     const calculatedDueDate = CalculateDueDate(submitDate, WORKIND_HOURS_IN_A_DAY);
     expect(calculatedDueDate).to.equalTime(dueDate);
   });
-})
+});
