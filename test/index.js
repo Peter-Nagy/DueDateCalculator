@@ -83,9 +83,9 @@ describe('DueDateCalculator due date calculating tests', () => {
   it('returns valid date if due date is after a time zone switch (summer/winter time)', () => {
     const turnaround = WORKIND_HOURS_IN_A_DAY;
     const submitDate = new Date(2018, 2, 23, 12);
-    const dueDate = new Date(2018, 2, 26, 13);
-    const calculatedDueDate = CalculateDueDate(submitDate, turnaround);
-    expect(calculatedDueDate).to.equalTime(dueDate);
+    const dueDate = new Date(2018, 2, 26, 13).toLocaleString('hu-HU', { timeZone: 'Europe/Budapest' });
+    const calculatedDueDate = CalculateDueDate(submitDate, turnaround).toLocaleString('hu-HU', { timeZone: 'Europe/Budapest' });
+    expect(calculatedDueDate).to.equal(dueDate);
   });
 
   it('returns valid date for lower worktime bounds', () => {
